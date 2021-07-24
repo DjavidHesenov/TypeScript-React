@@ -23,8 +23,8 @@ const todoSchema: Schema = new Schema({
     required: true
   },
   year: {
-    type: Date,
-    default: Date.now
+    type: Number,
+    required: true
   },
   isPublic: {
       type: Boolean,

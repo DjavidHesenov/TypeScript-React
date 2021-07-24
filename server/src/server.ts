@@ -7,7 +7,9 @@ import user from "./routes/api/user";
 import profile from "./routes/api/profile";
 import todo from "./routes/api/todo";
 
+const cors = require('cors')
 const app = express();
+app.use(cors());
 
 // Connect to MongoDB
 connectDB();
